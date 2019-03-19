@@ -1,0 +1,23 @@
+.local-button-border {
+    padding: .5rem .75rem !important;
+    line-height: 1 !important;
+    border: 1px solid !important;
+    background-color: #003DA5 !important;
+    font-size: 1em !important;
+    border-radius: 2px !important;
+    color: white !important;
+    min-width: min-content !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    position: relative !important;
+    white-space: nowrap !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 20px;
+}

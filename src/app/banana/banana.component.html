@@ -1,0 +1,52 @@
+<div class="flex-container">
+  <div style="width:500px">
+  </div>
+  <div style="text-align:center; font-family: Arial">
+    <h1>
+      {{ title }}!
+    </h1>
+    <div *ngIf = "ready">
+      <form>
+        <button class="local-button-border" type="submit" (click)="newBanana()">New Banana</button>
+        <button class="local-button-border" type="submit" (click)="peelBanana()">Peel Banana</button>
+        <button class="local-button-border" type="submit" (click)="eatBanana()">Eat Banana</button>
+        <button class="local-button-border" type="submit" (click)="timeHop()">Time Hop</button>
+      </form>
+
+      <div style="height: 30px"></div>
+      <div *ngIf="!isPeeled && color === 'yellow' && bitesRemaining === 6">
+        <!-- <img width="300" alt="New Banana Bunch" src="../../assets/images/bananaBunchNew.jpg"> -->
+        <h2>You should peel one of your bananas.</h2>
+      </div>
+      <div *ngIf="isPeeled && bitesRemaining === 6 && color === 'yellow'">
+        <!-- <img width="300" alt="Peeled Banana" src="../../assets/images/bananaPeeled.jpg"> -->
+        <h2>Yum, looks delicious!</h2>
+      </div>
+      <div *ngIf="isPeeled && bitesRemaining === 3 && color === 'yellow'">
+        <!-- <img width="300" alt="Bitten Banana" src="../../assets/images/bananaOneBite.jpg"> -->
+        <h2>Tasty!</h2>
+      </div>
+      <div *ngIf="isPeeled && bitesRemaining === 0 && color === 'yellow'">
+        <!-- <img width="300" alt="Bitten Banana" src="../../assets/images/bananaManyBites.jpg"> -->
+        <h2>Tasty!</h2>
+      </div>
+      <div *ngIf="color === 'brown'">
+        <!-- <img width="300" alt="Old Banana" src="../../assets/images/bananaBunchOld.jpg"> -->
+        <h2>Time to get new bananas</h2>
+      </div>
+    </div>
+  </div>
+  <div style="width:100px">
+  </div>
+  <mat-card style="margin-top: 150px">
+    <mat-card-content>
+      <div style="text-align:left; font-family: Arial">
+        <div *ngIf = "ready">
+          <h3>isPeeled = {{isPeeled}}</h3>
+          <h3>bitesRemaining = {{bitesRemaining}}</h3>
+          <h3>color = {{color}}</h3>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
