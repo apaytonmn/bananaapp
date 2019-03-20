@@ -14,25 +14,37 @@
       </form>
 
       <div style="height: 30px"></div>
-      <div *ngIf="!isPeeled && color === 'yellow' && bitesRemaining === 6">
-        <a href='https://photos.google.com/share/AF1QipNVMZzrsLqAcVe9cNMXYsl4DeVvNK1NnkZWGdjXPCgoQwp9do4Zb6iwEM0xoE44kg?key=b2dsMjdvV0V0UUtrRzBQb2lCM0VCZEtmLXRnV2tR&source=ctrlq.org'><img width="300" src='https://lh3.googleusercontent.com/ZVIR5v6FgIvBtGQJRFARKkThwgINPIYhQC4_LJ8iQfEfy-kPgmHBkMviL5jSrj0Rr9eUJxGhhJNRFx9aoqPq0XfxA0yL3uerAOs6tENzS5YrW7LCuGf6Jq5AOLMxwc-60iU9QTieug=w2400' /></a>
+      <div *ngIf="!isPeeled && color === 'yellow'">
+        <a href='https://photos.google.com/share/AF1QipNVMZzrsLqAcVe9cNMXYsl4DeVvNK1NnkZWGdjXPCgoQwp9do4Zb6iwEM0xoE44kg?key=b2dsMjdvV0V0UUtrRzBQb2lCM0VCZEtmLXRnV2tR&source=ctrlq.org'><img width="300" alt="New Banana" src='https://lh3.googleusercontent.com/ZVIR5v6FgIvBtGQJRFARKkThwgINPIYhQC4_LJ8iQfEfy-kPgmHBkMviL5jSrj0Rr9eUJxGhhJNRFx9aoqPq0XfxA0yL3uerAOs6tENzS5YrW7LCuGf6Jq5AOLMxwc-60iU9QTieug=w2400' /></a>
         <h2>You should peel your banana.</h2>
       </div>
-      <div *ngIf="isPeeled && bitesRemaining === 6 && color === 'yellow'">
-        <!-- <img width="300" alt="Peeled Banana" src="../../assets/images/bananaPeeled.jpg"> -->
+      <div *ngIf="isPeeled && bitesRemaining === 10 && color === 'yellow'">
+        <a href='https://photos.google.com/share/AF1QipNKbSfbHmAckTLRO9TqP9B5wuj2A_ZjMa7Nozc4sySwrIm5Ira1yPyAQIaXPW0Tzg?key=OVlNSnhQWm5FaDRZaHBWcDdQYkk5b1g2N042d2Vn&source=ctrlq.org'><img width="300" alt="Peeled Banana" src='https://lh3.googleusercontent.com/wQjm0m_d2cdS6wpfVF_3fBxUNcUpSFtPJ1fUPZT3JcxQabqZkoAMsTcV23vytj5bUObAmMQwH_t1WzW9YHWlgWslIAlyFWcIrY5vVuavI7bmUSkhYT4Dio0p9gPrFmDeTNuaryKesQ=w2400' /></a>
         <h2>Yum, looks delicious!</h2>
       </div>
-      <div *ngIf="isPeeled && bitesRemaining === 3 && color === 'yellow'">
-        <!-- <img width="300" alt="Bitten Banana" src="../../assets/images/bananaOneBite.jpg"> -->
+      <div *ngIf="isPeeled && bitesRemaining < 10  && bitesRemaining >= 6 && color === 'yellow'">
+        <a href='https://photos.google.com/share/AF1QipMs6pcpVVP9nW_vNbzSl4sRMpr9RdztsSK0C9LIeLMgiQorJeBYyQ0yHGJSuVz7kA?key=Q21wLVVXVjJxa0tDdURNbW5jZFNnamIwWVFlN2t3&source=ctrlq.org'><img width="300" alt="Banana Little Eaten" src='https://lh3.googleusercontent.com/cpknidBRkPo5fN6hy4qJ94wKSHZkr-RdiTZ8z3drOMyOtSJgU8JMLupQSf5R3H8GPiEJDSXPxUFt09Zld0OXm689Rhba8E7L_R4GxPD6VtpIzjzETBsC3ztHv2CQG2eeanSSxcVK4w=w2400' /></a>
         <h2>Tasty!</h2>
       </div>
-      <div *ngIf="isPeeled && bitesRemaining === 0 && color === 'yellow'">
-        <!-- <img width="300" alt="Bitten Banana" src="../../assets/images/bananaManyBites.jpg"> -->
+      <div *ngIf="isPeeled && bitesRemaining < 6 && bitesRemaining >= 3 && color === 'yellow'">
+        <a href='https://photos.google.com/share/AF1QipPLcoESDyQ7FL-F7RdsOTk-4XiV22Gz_ingNwM90I7YzCltchXIZTzPqSa9VKN8Dg?key=ODRadXBPQjNVNko4UW1jRG9YN1pPaHlXR3ZtS3BR&source=ctrlq.org'><img width="300" alt="Banana Lot Eaten" src='https://lh3.googleusercontent.com/MRYYm3fBqx5MkUZsEKQYLvOLKAYkZUuGvx8tALooDb0cLTbEXmOO-f_Tg3mkxSOUo1d-QQWmTIVQ6i7jA5ITr-AEMAyUK4GHBdFVPTOptBObfXB4hqZ_mAs3cMmI4js7vTT5i-L-Fg=w2400' /></a>
         <h2>Tasty!</h2>
       </div>
-      <div *ngIf="color === 'brown'">
-        <!-- <img width="300" alt="Old Banana" src="../../assets/images/bananaBunchOld.jpg"> -->
-        <h2>Time to get new bananas</h2>
+      <div *ngIf="isPeeled && bitesRemaining < 3 && color === 'yellow'">
+        <a href='https://photos.google.com/share/AF1QipO9pYi_lnLJuZ0RI5hpc4mCDgZP71nq-FDN09EZ6g7ytZgKDpUS0G4jQh02iYOLSA?key=UHBpSnBtcFBCbkRPY3V1enhubWIzX3VRdGUzR1N3&source=ctrlq.org'><img width="300" alt="Eaten Banana" src='https://lh3.googleusercontent.com/YcOltSxDivi4vF-wy4W4xlJhKcjWXxt7F-9IjiedI_DbYTa24LbbNqeziP1vqSigyn2zeSANnLSoTapxBdnercSQCOKnQTFbY0zjcKnKFdLwjXLN0m4DLJ0Cp7iHsBj1QEuCYAevPw=w2400' /></a>
+        <h2>That was a great banana!</h2>
+      </div>
+      <div *ngIf="!isPeeled && color === 'brown'">
+        <a href='https://photos.google.com/share/AF1QipMoGRW0kkUdjyih0pqNKJepNLzltHqSlomo4hwL5-t537_XnAEBT9xknhGjxLuGWw?key=MmtoenhST2haM0JxRFJPaVRXa0lOWDQ5RVhzc2Fn&source=ctrlq.org'><img width="300" alt="Old Unpeeled Banana" src='https://lh3.googleusercontent.com/AgvLinydnfXbbw6Qcg-WoiSPs9BJEOsus3z5TSovtz54xlfsZPgkOnTK4FlBNK9npY4rgxBG--15tbq12q8gIZhTa1oJLjW1qGjAGfMUBhBH0hSRca9SQXxO8uWFXEn5HMkY528q9A=w2400' /></a>
+        <h2>Bummer, you missed your chance</h2>
+      </div>
+      <div *ngIf="isPeeled &&  bitesRemaining > 0 && color === 'brown'">
+        <a href='https://photos.google.com/share/AF1QipNdXiONYnHv_MKksfSukAXggR-f_jvzMBXuPKDat-hnvMbz7p7dQe5WWx-fJOO2Bw?key=SFFzZ2cyRWpKTlN6TF9uY1hBY2MtOFVGUmlYUlR3&source=ctrlq.org'><img width="300" alt="Old Peeled Banana" src='https://lh3.googleusercontent.com/Gl1sGmemz1virgsJsRS88jVXe8gr-xA6XeuRycO8tvSspQ0gtGemxV0UGYl8ozfPhV5J6h736orM9ZvG92iczcUq8ETXfNQAztBHyZNs_yd4vUpDoC_2If7YWpf_aNqERaxSXFN8bA=w2400' /></a>
+        <h2>Time to get a new banana</h2>
+      </div>
+      <div *ngIf="isPeeled &&  bitesRemaining === 0 && color === 'brown'">
+        <a href='https://photos.google.com/share/AF1QipMYV6facdvJM72ZRmtceqiFKuyDawrL82uMv-qCXhG3mp99dFU9AJomVHn32aARFQ?key=TklkMlVTVV9FQ1Y2cWU5V21UQkJWRTM4WW9CYnNn&source=ctrlq.org'><img width="300" alt="Old Empty Banana Peel" src='https://lh3.googleusercontent.com/RLLQRn3Hv2hlksl_GjeeqdeQe1AtuKmfxTKR2iG4Sm0fDNwzMPOS1iy5pUgpT21WTGi0UwfnUtuuGjRt6WG0tl7UxsA0TtuaqgsG2PPXxvTWGmiHpX2gRY1DRli944sSabKj03RHww=w2400' /></a>
+        <h2>Time to get a new banana</h2>
       </div>
     </div>
   </div>
