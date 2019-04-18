@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BananaComponent implements OnInit {
 
-    title = 'My ngRx Banana App';
+    title = 'My NgRx Banana App';
     ready;
     color;
     isPeeled;
