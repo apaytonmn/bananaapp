@@ -18,12 +18,12 @@
         <a href='https://photos.google.com/share/AF1QipNVMZzrsLqAcVe9cNMXYsl4DeVvNK1NnkZWGdjXPCgoQwp9do4Zb6iwEM0xoE44kg?key=b2dsMjdvV0V0UUtrRzBQb2lCM0VCZEtmLXRnV2tR&source=ctrlq.org'><img width="300" alt="New Banana" src='https://lh3.googleusercontent.com/ZVIR5v6FgIvBtGQJRFARKkThwgINPIYhQC4_LJ8iQfEfy-kPgmHBkMviL5jSrj0Rr9eUJxGhhJNRFx9aoqPq0XfxA0yL3uerAOs6tENzS5YrW7LCuGf6Jq5AOLMxwc-60iU9QTieug=w2400' /></a>
         <h2>You should peel your banana.</h2>
       </div>
-      <div *ngIf="isPeeled && bitesRemaining === 10 && color === 'yellow'">
+      <div *ngIf="isPeeled && bitesRemaining >= 9 && color === 'yellow'">
         <a href='https://photos.google.com/share/AF1QipP8L9-5YjP0bjRCb8Mv1LJsZHbIPM9Cm8ffSZGj-nBOjo0DXIToiBwN9ggTFGaPpg?key=RzZCZGNnZnZaMUU2bklQTnNQUTJZcHRlbWpaMVp3&source=ctrlq.org'><img width="300" alt="Peeled Banana"
         src='https://lh3.googleusercontent.com/UqIseepVkNZcjHENDO26urK5TcTB8g4OuB58S13FGDVjHxbJrGLI_PPV00wXil-F-jAGZCK9UlcdYGQTCVmyrlj3CZkbYNnwvt8k6KjiZX1d-WZ5agiysC6DJmFKWNCMpx8UItxcAg=w2400' /></a>
         <h2>Yum, looks delicious!</h2>
       </div>
-      <div *ngIf="isPeeled && bitesRemaining < 10  && bitesRemaining >= 6 && color === 'yellow'">
+      <div *ngIf="isPeeled && bitesRemaining < 9  && bitesRemaining >= 6 && color === 'yellow'">
         <a href='https://photos.google.com/share/AF1QipPUxn8onPvZurcD53Q7RDT-kbOVO6e8kxT1RoAWT57aP68DJa24rGxInT2vTUD_1g?key=Z3ZKYTZFNTloWGh1YVByUFpESl9OVTljd3hrTDFR&source=ctrlq.org'><img width="300" alt="Banana Little Eaten" src='https://lh3.googleusercontent.com/V2rjC6LToE3mllhHsuoin0FgQRMIfUIosU2kqx5ZQq2ydRFUsiB359yamoClDTjfj0osFGK_xJ5PAxqBm4sxAGQD01N9b_KkjQ7j1WriVcyts70flZ3_abWSggm0BG-hJ25G-PETUQ=w2400' /></a>
         <h2>Tasty!</h2>
       </div>
