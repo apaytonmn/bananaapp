@@ -55,19 +55,17 @@
         <a href='https://photos.google.com/share/AF1QipMYV6facdvJM72ZRmtceqiFKuyDawrL82uMv-qCXhG3mp99dFU9AJomVHn32aARFQ?key=TklkMlVTVV9FQ1Y2cWU5V21UQkJWRTM4WW9CYnNn&source=ctrlq.org'><img width="300" alt="Old Empty Banana Peel" src='https://lh3.googleusercontent.com/RLLQRn3Hv2hlksl_GjeeqdeQe1AtuKmfxTKR2iG4Sm0fDNwzMPOS1iy5pUgpT21WTGi0UwfnUtuuGjRt6WG0tl7UxsA0TtuaqgsG2PPXxvTWGmiHpX2gRY1DRli944sSabKj03RHww=w2400' /></a>
         <h2>Time to get a new banana</h2>
       </div>
+      <mat-card style="margin-top: 50px">
+        <mat-card-content>
+          <div style="text-align:left; font-family: Arial">
+              <h3>isPeeled = {{banana.isPeeled}}</h3>
+              <h3>bitesRemaining = {{banana.bitesRemaining}}</h3>
+              <h3>color = {{banana.color}}</h3>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
   <div style="width:100px">
   </div>
-  <mat-card style="margin-top: 150px">
-    <mat-card-content>
-      <div style="text-align:left; font-family: Arial">
-        <div *ngIf = "ready">
-          <h3>isPeeled = {{isPeeled}}</h3>
-          <h3>bitesRemaining = {{bitesRemaining}}</h3>
-          <h3>color = {{color}}</h3>
-        </div>
-      </div>
-    </mat-card-content>
-  </mat-card>
 </div>
